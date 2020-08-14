@@ -7,9 +7,9 @@
 <head>
 <title>Using turn.js and the new zoom feature</title>
 <meta name="viewport" content="width = 1050, user-scalable = no" />
-<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
-<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
-<script type="text/javascript" src="../../lib/hash.js"></script>
+<script type="text/javascript" src="/extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="/extras/modernizr.2.5.3.min.js"></script>
+<script type="text/javascript" src="/lib/hash.js"></script>
 
 </head>
 <body>
@@ -34,7 +34,7 @@
 	<div>
 		<ul>
 			<li class="i">
-				<img class=" hard" src="pages/1-thumb.jpg" width="76" height="100" class="page-1">
+				<img class="hard" src="pages/1-thumb.jpg" width="76" height="100" class="page-1">
 				<span>1</span>
 			</li>
 			<li class="d">
@@ -58,12 +58,12 @@
 				<span>8-9</span>
 			</li>
 			<li class="d">
-				<img src="pages/7-thumb.jpg" width="76" height="100" class="page-10">
-				<img src="pages/4-thumb.jpg" width="76" height="100" class="page-11">
+				<img src="pages/10-thumb.jpg" width="76" height="100" class="page-10">
+				<img src="pages/11-thumb.jpg" width="76" height="100" class="page-11">
 				<span>10-11</span>
 			</li>
 			<li class="i">
-				<img src="pages/10-thumb.jpg" width="76" height="100" class="page-12">
+				<img src="pages/12-thumb.jpg" width="76" height="100" class="page-12">
 				<span>12</span>
 			</li>
 		<ul>
@@ -457,9 +457,9 @@ function loadApp() {
 
 yepnope({
 	test : Modernizr.csstransforms,
-	yep: ['../../lib/turn.js'],
-	nope: ['../../lib/turn.html4.min.js'],
-	both: ['../../lib/zoom.min.js', 'js/magazine.js', 'css/magazine.css'],
+	yep: ['/lib/turn.js'],
+	nope: ['/lib/turn.html4.min.js'],
+	both: ['/lib/zoom.min.js', 'js/magazine.js', 'css/magazine.css'],
 	complete: loadApp
 });
 
