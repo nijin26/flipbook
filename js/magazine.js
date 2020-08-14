@@ -46,7 +46,7 @@ function loadPage(page, pageElement) {
 
   img.attr(
     "src",
-    "https://cdn.jsdelivr.net/gh/nijin26/flipbook/pages/" + page + ".jpg"
+    "https://cdn.jsdelivr.net/gh/nijin26/flipbook/page/" + page + ".jpg"
   );
 
   loadRegions(page, pageElement);
@@ -72,7 +72,7 @@ function zoomTo(event) {
 
 function loadRegions(page, element) {
   $.getJSON(
-    "https://cdn.jsdelivr.net/gh/nijin26/flipbook/pages/" +
+    "https://cdn.jsdelivr.net/gh/nijin26/flipbook/page/" +
       page +
       "-regions.json"
   ).done(function (data) {
@@ -164,7 +164,7 @@ function loadLargePage(page, pageElement) {
 
   img.attr(
     "src",
-    "https://cdn.jsdelivr.net/gh/nijin26/flipbook/pages/" + page + "-large.jpg"
+    "https://cdn.jsdelivr.net/gh/nijin26/flipbook/page/" + page + "-large.jpg"
   );
 }
 
@@ -180,7 +180,7 @@ function loadSmallPage(page, pageElement) {
 
   img.attr(
     "src",
-    "https://cdn.jsdelivr.net/gh/nijin26/flipbook/pages/" + page + ".jpg"
+    "https://cdn.jsdelivr.net/gh/nijin26/flipbook/page/" + page + ".jpg"
   );
 }
 
@@ -284,7 +284,7 @@ function setPreview(view) {
   var previewWidth = 112,
     previewHeight = 73,
     previewSrc =
-      "https://cdn.jsdelivr.net/gh/nijin26/flipbook/pages/preview.jpg",
+      "https://cdn.jsdelivr.net/gh/nijin26/flipbook/page/preview.jpg",
     preview = $(_thumbPreview.children(":first")),
     numPages =
       view == 1 || view == $("#slider").slider("option", "max") ? 1 : 2,
